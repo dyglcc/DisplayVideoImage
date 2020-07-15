@@ -1,0 +1,116 @@
+project.ext {
+
+    sdk_config = [
+            //--------------------------------------------------------------------------------------2.0编程 2.1可视化
+            version_code       : "2.1",
+            //--------------------------------------------------------------------------------------包名sdk version
+            version_name       : "0.0.2",
+            //--------------------------------------------------------------------------------------release是否混淆
+            obscure            : false,
+            //-------"device_id": "458b0e45459b1e6a",
+            //"wifi_mac": "02:00:00:00:00:00",
+            //"network_state": "WIFI_CONNECTED", ----------------------------------------------------true敏感数据上报,false不上报
+            reportSensitiveData: true,
+
+    ]
+    android = [
+            compileSdkVersion: 23,
+            buildToolsVersion: "23.0.3",
+            minSdkVersion    : 9,
+            targetSdkVersion : 23,
+            version_name     : sdk_config.version_name,
+    ]
+
+    debugServer = [
+            server   : "\"https://www.kuaishanapp.net:9000/\"",
+            track    : "\"https://tracker.appadhoc.com/\"",
+            websocket: "\"https://socket.appadhoc.com/\"",
+            qi_niu   : "\"https://cdn-api.appadhoc.com/\""
+//server   : "\"http://192.168.1.2:9000/\"",
+//track    : "\"http://tracker.dev.com/\"",
+//websocket: "\"http://socket.appadhoc.com/\"",
+//qi_niu   : "\"http://cdn-api.appadhoc.com/\""
+    ]
+
+    releaseServer = [
+            server   : "\"https://www.kuaishan.net/hotfix-console\"",
+            track    : "\"https://tracker.appadhoc.com/\"",
+            websocket: "\"https://socket.appadhoc.com/\"",
+            qi_niu   : "\"https://cdn-api.appadhoc.com/\""
+    ]
+
+    field = [
+            SdkVersionCode       : "SdkVersionCode",
+            LOG                  : "LogDebug",
+            report_Sensitive_Data: "RSD_Adhoc",
+            FlagServer           : "FlagServer",
+            TrackServer          : "TrackServer",
+            WebsocketServer      : "WebsocketServer",
+            QiNiuServer          : "QiNiuServer",
+    ]
+    file = [
+            //--------------------------------------------------------------------------------------将jar包copy到release文件夹
+            releasePath        : "${rootDir}/release/adhoc-v${rootProject.ext.sdk_config.version_name}-%s.jar",
+            //--------------------------------------------------------------------------------------build产生的jar源文件
+            cachePath          : "${rootDir}/android_sdk_v0/build/intermediates/bundles/%s/classes.jar",
+            //--------------------------------------------------------------------------------------将jar包copy到AbTestDemo/libs
+            demoPath           : "${rootDir}/AbTestDemo/libs/adhoc-v${rootProject.ext.sdk_config.version_name}.jar",
+            //--------------------------------------------------------------------------------------AdhocTracker的绝对路径
+            mainPath           : "${rootDir}/android_sdk_v0/src/main/java/com/adhoc/adhocsdk/AdhocTracker.java",
+            //--------------------------------------------------------------------------------------FlagUtils的绝对路径
+//            flagPath   : "${rootDir}/android_sdk_v0/src/main/java/com/adhoc/adhocsdk/FlagUtils.java",
+            //--------------------------------------------------------------------------------------mapping原文件
+//            mappingFilePath    : "${rootDir}/android_sdk_v0/build/outputs/mapping/release/mapping.txt",
+            mappingFilePath    : "${rootDir}/android_sdk_v0/build/outputs/mapping/release/",
+            //--------------------------------------------------------------------------------------copy后的地址
+//            copyMappingFilePath: "${rootDir}/android_sdk_v0/mapping-${rootProject.ext.sdk_config.version_name}.txt",
+            copyMappingFilePath: "${rootDir}/android_sdk_v0/sdk-mapping/",
+    ]
+    final_name = [
+            debug   : "debug",
+            release : "release",
+            min_code: "2.0",
+            all_code: "2.1",
+            min     : "min",
+            all     : "all",
+    ]
+    plugins = [application: 'com.android.application',
+               library    : 'com.android.library',
+               maven      : 'com.github.dcendents.android-maven',
+               bintray    : 'com.jfrog.bintray']
+
+    android = [applicationId    : "com.yanzhenjie.permission.sample",
+               compileSdkVersion: 29,
+               buildToolsVersion: "29.0.2",
+               minSdkVersion    : 14,
+               targetSdkVersion : 29,
+               versionCode      : 108,
+               versionName      : "2.0.3"]
+
+    bintray = [version       : "2.0.3",
+
+               siteUrl       : 'https://github.com/yanzhenjie/AndPermission',
+               gitUrl        : 'https://github.com/yanzhenjie/AndPermission.git',
+
+               group         : "com.yanzhenjie",
+
+               packaging     : 'aar',
+               name          : 'Permission',
+               description   : 'Permission manager for Android',
+
+               licenseName   : 'The Apache Software License, Version 2.0',
+               licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt',
+
+               developerId   : 'yanzhenjie',
+               developerName : 'yanzhenjie',
+               developerEmail: 'im.yanzhenjie@gmail.com',
+
+               binrayLibrary : "permission",
+               bintrayRepo   : "maven",
+               bintrayUser   : 'yolanda',
+               bintrayLicense: "Apache-2.0"]
+
+    dependencies = [
+            fragment: 'androidx.appcompat:appcompat:1.1.0'
+    ]
+}

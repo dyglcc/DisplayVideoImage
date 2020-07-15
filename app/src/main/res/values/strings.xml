@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">DisplayVideoImage</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+
+
+
+
+    <string name="setting">Setting</string>
+    <string name="resume">Resume</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">@android:string/ok</string>
+
+    <string name="successfully">Successful</string>
+    <string name="failure">Failure</string>
+
+    <string name="permission_camera">Camera</string>
+    <string name="permission_contact">Contact</string>
+    <string name="permission_location">Location</string>
+
+    <string name="permission_calendar">Calendar</string>
+    <string name="permission_microphone">Microphone</string>
+    <string name="permission_storage">Storage</string>
+
+    <string name="permission_phone">Phone</string>
+    <string name="permission_call_log">Call Log</string>
+    <string name="permission_activity_recognition">Activity Recognition</string>
+    <string name="permission_sensors">Sensors</string>
+    <string name="permission_sms">SMS</string>
+    <string name="permission_setting">Permission Setting</string>
+
+    <string name="permission_notification">Notification</string>
+    <string name="permission_notification_listener">Notification Listener</string>
+
+    <string name="permission_install">Install Apk</string>
+    <string name="permission_overlay">AlertWindow</string>
+
+    <string name="permission_write_setting">Write System Setting</string>
+
+    <string name="title_dialog">Tips</string>
+    <string name="title_dialog_obtain_msg">获取验证码</string>
+    <string name="message_permission_rationale">Grant the following permissions to continue the program:\n\n%1$s</string>
+    <string name="message_permission_always_failed">Please give us permission in the settings:\n\n%1$s</string>
+    <string name="message_setting_comeback">The user comes back from the settings page.</string>
+
+    <string name="message_notification_rationale">Your device does not allow us to pop up notifications.</string>
+    <string name="message_notification_listener_rationale">Your device does not allow us to access notifications.</string>
+
+    <string name="message_install_failed">Your device is not allowed us to install apps.</string>
+
+    <string name="message_overlay_failed">Your device is not allowed us to draw on other applications.</string>
+
+    <string name="message_write_setting_failed">Your device is not allowed us to modify the system settings.</string>
+
+    <string name="message_error_storage">Please check the external storage device.</string>
+    <string name="message_error_storeage_inavailable">External storage device is not available.</string>
+
+    <string name="message_error_save_failed">Save failed, please try again.</string>
+    <string name="tryingObtain">正在努力获取,请稍等..</string>
+    <string name="inputPhoneNumber">请输入手机号</string>
+    <string name="inputPass">请输入密码</string>
+    <string name="inputPassNew">请输入新密码</string>
+    <string name="btnLoginString">登录</string>
+    <string name="forgotPass">忘记密码?</string>
+    <string name="regString">注册</string>
+    <string name="add">添加</string>
+    <string name="phoneNumber">手机号</string>
+    <string name="relationOrName">关系或姓名</string>
+    <string name="about_us">关于我们</string>
+    <string name="tv_privacy">隐私条款</string>
+    <string name="tv_logout">退出登录</string>
+    <string name="tv_contract_us">问题反馈</string>
+    <string name="obtain_msgcode">获取验证码</string>
+    <string name="try_loading">正在努力获取，请稍等…</string>
+    <string name="copy_msg_code">复制验证码</string>
+    <string name="invite">邀请</string>
+    <string name="add_sub_account">立即添加</string>
+    <string name="app_add_subaccount_tips">添加联系人请确保已经下载APP并且注 册账号成功，否则会添加失败！</string>
+    <string name="tip">提示</string>
+    <string name="copyMsM">复制验证码</string>
+    <string name="giveMyselfName">给自己起个名儿</string>
+    <string name="confirmPass">请确认密码</string>
+    <string name="sure">确定</string>
+    <string name="invitePeople">邀请亲人分享会员帐号</string>
+</resources>
